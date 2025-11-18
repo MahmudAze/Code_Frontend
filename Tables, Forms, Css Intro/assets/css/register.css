@@ -1,0 +1,167 @@
+/* General Styling & Background */
+body {
+    /* Set a dark grayish-blue background color similar to the image */
+    background-color: #5d6771;
+    /* Center the form block vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Use 100% of the viewport height */
+    min-height: 100vh;
+    /* Remove default body margin */
+    margin: 0;
+    /* Set a default font (e.g., a common sans-serif like Roboto, or Arial) */
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    /* To stack the form and the Sign In link at the bottom */
+}
+
+/* Form Container Styling (The White Box) */
+.register-container {
+    /* Group the H1, subtitle, and form elements together */
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    /* Responsive width */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Space above the "Sign In" link */
+}
+
+/* Header (The H1 Tag) */
+h1 {
+    /* Style for 'Register' text */
+    text-align: center;
+    color: #444444;
+    font-size: 28px;
+    font-weight: normal;
+    /* Lighter font-weight */
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    /* Space for the divider line */
+    /* Add the horizontal rule divider using a border */
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+}
+
+/* Subtitle/Instructional Text */
+.subtitle {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 25px;
+    font-size: 14px;
+    margin-top: -15px;
+    /* Pull it closer to the H1 */
+}
+
+/* Styling for all Text Input Fields (excluding checkbox and submit) */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    /* Use box-sizing for consistent padding/border calculation */
+    box-sizing: border-box;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #555555;
+    display: block;
+}
+
+/* Focus state for input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #5cb85c;
+    /* Light green focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+/* Grouping First Name and Last Name */
+.input-group {
+    /* This targets the <div> to hold the first two inputs side-by-side */
+    display: flex;
+    gap: 15px;
+    /* Space between the two input fields */
+    margin-bottom: 15px;
+}
+
+/* Ensure the inputs within the group take up equal space */
+.input-group input {
+    width: 50%;
+    margin-bottom: 0;
+    /* Remove extra space from the input's own margin-bottom */
+}
+
+/* Checkbox Container and Text */
+.checkbox-container {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    /* Space above the button */
+    font-size: 14px;
+}
+
+/* Style the checkbox itself */
+input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+/* Style the text next to the checkbox */
+.checkbox-container label {
+    color: #777777;
+    cursor: pointer;
+}
+
+/* Style the Terms & Privacy links */
+.checkbox-container a {
+    color: #4caf50;
+    /* A darker green for the links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Styling the Submit Button */
+input[type="submit"] {
+    width: 100%;
+    /* Apply the distinct green gradient/color */
+    background: linear-gradient(to bottom, #72c776, #5cb85c);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Subtle hover effect */
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #63b367, #51a351);
+}
+
+/* Already have an account? Sign in */
+.signin-link {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    /* White text color matching the bottom of the image */
+    margin-top: 10px;
+}
+
+.signin-link a {
+    color: #5cb85c;
+    /* Green link color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}

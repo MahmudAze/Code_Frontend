@@ -1,0 +1,204 @@
+/* Base Styles and Typography */
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Light gray background for contrast */
+    display: flex;
+    justify-content: center;
+}
+
+/* Paper/Document Container */
+.cv-page {
+    width: 210mm;
+    /* A4 width */
+    min-height: 297mm;
+    /* A4 height */
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* --- Header Section --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.name-title {
+    line-height: 1.2;
+}
+
+.name-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.name-title p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.contact-info {
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: right;
+    color: #555;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.contact-info a {
+    color: #007bff;
+    /* Blue for links, like in the image */
+    text-decoration: none;
+}
+
+/* Summary Section */
+.summary {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+/* --- Main Content Layout (Two Columns) --- */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* Space between columns */
+}
+
+.left-column {
+    flex: 2;
+    /* Wider column for Employment and main content */
+}
+
+.right-column {
+    flex: 1;
+    /* Narrower column for Education and Skills */
+}
+
+/* --- Section Titles --- */
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+    /* Darker line for titles */
+}
+
+/* --- Entry Styling (Job/Education) --- */
+.entry {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.entry-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.entry-title span:first-child {
+    font-weight: bold;
+}
+
+.entry-location,
+.entry-subtitle {
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.description {
+    margin-top: 5px;
+    font-size: 11.5px;
+}
+
+.description ul {
+    padding-left: 20px;
+    margin: 5px 0 0 0;
+}
+
+.description li {
+    margin-bottom: 5px;
+}
+
+/* The specific content link styling from the image */
+.description a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* --- Skills / References / Courses Styling (3-Column Section) --- */
+.three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.three-column-grid .section-title {
+    grid-column: 1 / -1;
+    /* Make the title span all 3 columns */
+    margin-top: 0;
+}
+
+.skill-list,
+.reference-list,
+.course-list {
+    font-size: 12px;
+}
+
+.skill-list h4,
+.course-list h4,
+.reference-list h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 3px;
+    color: #333;
+}
+
+.skill-list ul,
+.course-list ul,
+.reference-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li,
+.course-list li,
+.reference-list li {
+    margin-bottom: 3px;
+}
+
+/* Style for the final 'Additional Information' section */
+.additional-info .section-title {
+    margin-top: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.additional-info p {
+    font-size: 12px;
+}
