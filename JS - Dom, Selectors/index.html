@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="calculator">
+        <h1 class="title">Sade hesablayici</h1>
+
+        <div class="row inputs">
+            <div class="field">
+                <label for="num1">Number-1</label>
+                <input type="number" id="num1" class="input-number" placeholder="Number-1">
+            </div>
+
+            <div class="field">
+                <label for="num2">Number-2</label>
+                <input type="number" id="num2" class="input-number" placeholder="Number-2">
+            </div>
+        </div>
+
+        <div class="row buttons">
+            <button id="add" class="btn blue">Toplama</button>
+            <button id="sub" class="btn red">Cixma</button>
+            <button id="mul" class="btn green">Vurma</button>
+            <button id="div" class="btn yellow">Bolme</button>
+        </div>
+
+        <div class="row result">
+            <input type="text" id="result" placeholder="neticeni burani yazdirin" readonly>
+        </div>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
